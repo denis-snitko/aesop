@@ -1,0 +1,28 @@
+.s-top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px 0;
+
+    background-color: #252525;
+
+    // .s-top-header__text
+
+    &__text {
+        padding-right: 25px;
+        font-size: 14px;
+        line-height: 21px;
+
+        color: #fffef2;
+    }
+
+    // .s-top-header__button
+
+    &__button {
+        width: 22px;
+        height: 22px;
+        background: transparent;
+        border: none;
+    }
+}
