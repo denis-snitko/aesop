@@ -537,12 +537,12 @@ body {
 }
 
 .s-hero {
-  height: 100vh;
+  height: 917px;
   margin-top: -87px;
   padding-top: 187px;
   background: url("../img/hero-bg.jpg") right center no-repeat;
-  background-size: cover;
   background-position-x: left;
+  background-size: cover;
 }
 
 .s-hero__body {
