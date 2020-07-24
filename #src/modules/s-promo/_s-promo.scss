@@ -1,0 +1,96 @@
+.s-promo {
+    padding: 125px 0;
+
+    // .s-promo__row
+
+    &__row {
+        @include row-flex();
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    // .s-promo__col-4
+
+    &__col-4 {
+        @include col();
+        @include size(5);
+        @include size-lg(12);
+    }
+    
+    // .s-promo__col-6
+    
+    &__col-6 {
+        @include col();
+        @include size(7);
+        @include size-lg(12);
+        margin-right: 0;
+    }
+
+    // .s-promo__body
+
+    &__body {
+        max-width: 550px;
+        padding-left: 65px;
+
+        @include lg-block() {
+            margin: 0 65px;
+            padding: 0;
+        }
+        
+        @include sm-block() {
+            margin: 0 15px;
+            padding: 0;
+        }
+    }
+
+    // .s-promo__smal-title
+
+    &__smal-title {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    // .s-promo__title
+
+    &__title {
+        margin-bottom: 33px;
+        font-family: "Forum";
+        font-size: 27px;
+        line-height: 40px;
+    }
+
+    // .s-promo__descr
+
+    &__descr {
+        margin-bottom: 26px;
+        line-height: 27px;
+    }
+
+    // .s-promo__btn
+
+    &__btn {
+        @include sm-block() {
+            width: 100%;
+        }
+    }
+
+    // .s-promo__img
+
+    &__img {
+        @include lg-block() {
+            margin: 0 65px;
+            margin-top: 50px;
+        }
+
+        @include sm-block() {
+            margin: 0 15px;
+            margin-top: 30px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

@@ -14,12 +14,38 @@
         @@include('modules/s-top-header/_s-top-header.html')
         @@include('modules/s-header/_s-header.html')
         @@include('modules/s-hero/_s-hero.html')
-        @@include('modules/s-product-slider/_s-product-slider.html')
         <div class="main-content">
-            main content
+            @@include('modules/s-product-slider/_s-product-slider.html')
+            @@include('modules/s-promo/_s-promo.html')
+            @@include('modules/s-product-slider/_s-product-slider.html')
+
+            <!-- s-promo -->
+            <section class="s-promo">
+                <div class="s-promo__row">
+                    <div class="s-promo__col-4">
+                        <div class="s-promo__body">
+                            <div class="s-promo__smal-title">
+                                <p>Understanding your skin</p>
+                            </div>
+                            <h2 class="s-promo__title">Complexion and character</h2>
+                            <div class="s-promo__descr">
+                                <p>To better understand the particularities and needs of your skin, and to determine which products are most appropriate to clarify, nourish and protect it, we invite you to discover our guide.</p>
+                            </div>
+                            <button class="s-promo__btn hero-btn">Explore skin types</button>
+                        </div>
+                    </div>
+                    <div class="s-promo__col-6">
+                        <div class="s-promo__img">
+                            <img src="./img/promo-2.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.s-promo -->
+
         </div>
-        <footer>footer</footer>
     </div>
+    <footer>footer</footer>
     <script src="./js/vendors.js"></script>
     <script src="./js/main.js"></script>
 </body>
