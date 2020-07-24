@@ -32,9 +32,9 @@
         }
 
         a {
+            font-weight: inherit;
             font-size: inherit;
             line-height: inherit;
-            font-weight: inherit;
 
             color: $base-text-color;
         }
@@ -51,9 +51,8 @@
 }
 .login-btn {
     margin-right: 25px;
+    font-weight: inherit;
     font-size: inherit;
-            font-weight: inherit;
 }
 .cart-btn {
-   
 }
