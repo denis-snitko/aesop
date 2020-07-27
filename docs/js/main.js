@@ -33,22 +33,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    // Animation Label
+    const inputMail = document.querySelectorAll('.login-modal__email');
+
+    inputMail.forEach(element => {
+        element.addEventListener('focus', (event) => {
+            event.target.previousElementSibling.classList.add('login-modal__label--top');
+        })
+    })
+
     //** Login-modal */
-    const
-        inputMail = document.querySelector('#login-modal__email'),
-        inputMailLabel = document.querySelector('.login-modal__label');
-
-    inputMail.addEventListener('focus', () => {
-        inputMailLabel.classList.add('login-modal__label--top');
-    });
-
 
     const
         body = document.querySelector('body'), //для запрета скрола
         modal = document.querySelector('.login-modal'), //модалка вместе с фоном
         showModalBtn = document.querySelector('.login-btn'), // элемент который открывает модалку
         closeModalBtn = document.querySelector('.login-modal__close'); // элемент закрытия модалки
-        hiddenClass = 'login-modal--hidden'; //класс закрытия
+    hiddenClass = 'login-modal--hidden'; //класс закрытия
 
     function toggleModal() {
         modal.classList.toggle(hiddenClass);
