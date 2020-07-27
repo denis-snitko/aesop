@@ -775,6 +775,24 @@ body {
   width: 100%;
 }
 
+.s-phrase {
+  padding: 150px 0;
+  text-align: center;
+}
+
+.s-phrase__text {
+  margin-bottom: 20px;
+  font-family: "Forum";
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.s-phrase__author {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+}
+
 .login-modal {
   position: fixed;
   z-index: 100;
