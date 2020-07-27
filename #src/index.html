@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
     <title>Aesop | Главная</title>
 </head>
@@ -21,7 +22,7 @@
             @@include('modules/s-product-slider/_s-product-slider.html')
 
             <!-- s-promo -->
-            <section class="s-promo">
+            <section class="s-promo" data-aos="fade-right" data-aos-duration="500">
                 <div class="s-promo__row">
                     <div class="s-promo__col-4">
                         <div class="s-promo__body">
@@ -49,6 +50,8 @@
     @@include('modules/s-footer/_s-footer.html')
     @@include('modules/s-copyright/_s-copyright.html')
     @@include('modules/login-modal/_login-modal.html')
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/vendors.js"></script>
     <script src="./js/main.js"></script>
 </body>
