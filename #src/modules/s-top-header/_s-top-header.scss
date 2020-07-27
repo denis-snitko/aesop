@@ -16,6 +16,10 @@
         line-height: 21px;
 
         color: #fffef2;
+
+        @include sm-block() {
+            font-size: 10px;
+        }
     }
 
     // .s-top-header__button

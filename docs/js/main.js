@@ -35,12 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //** Login-modal */
     const
-        inputMail = document.getElementById('login-modal__email'),
+        inputMail = document.querySelector('#login-modal__email'),
         inputMailLabel = document.querySelector('.login-modal__label');
 
     inputMail.addEventListener('focus', () => {
         inputMailLabel.classList.add('login-modal__label--top');
     });
+
 
     const
         body = document.querySelector('body'), //для запрета скрола
