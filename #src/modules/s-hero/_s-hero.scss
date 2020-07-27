@@ -5,17 +5,32 @@
     background: url("../img/hero-bg.jpg") right center no-repeat;
     background-position-x: left;
     background-size: cover;
+    
+    @include md-block() {
+        height: auto;
+        padding-top: 87px;
+        padding-bottom: 60px;
+    }
 
     // .s-hero__body
 
     &__body {
         display: flex;
+
+        @include md-block() {
+            flex-direction: column;
+        }
+    
     }
 
     // .s-hero__text
 
     &__logo {
         margin-right: 120px;
+        
+        @include md-block() {
+            margin-bottom: 40px;
+        }
     }
 
     &__text {
@@ -29,6 +44,10 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 24px;
+
+        @include md-block() {
+            margin-bottom: 0;
+        }
     }
 
     // .s-hero__main-title
@@ -51,7 +70,9 @@
     // .s-hero__btn
 
     &__btn {
-       
+        @include sm-block() {
+            width: 100%;
+        }
     }
 }
 

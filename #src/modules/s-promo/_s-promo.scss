@@ -1,5 +1,8 @@
 .s-promo {
     padding: 125px 0;
+    @include md-block() {
+        padding: 30px 0;
+    }
 
     // .s-promo__row
 
