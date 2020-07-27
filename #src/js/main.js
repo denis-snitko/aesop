@@ -33,14 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
-    //Open Cart
-    const cartBtn = document.querySelector('.cart-btn');
-    const cart = document.querySelector('.s-cart');
-    cartBtn.addEventListener('click', () => {
-        cart.classList.add('show-cart');
-    })
-    
-
     // Animation Label
     const inputMail = document.querySelectorAll('.login-modal__email');
 
@@ -80,3 +72,20 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 AOS.init();
+
+/** Cart */
+jQuery(function ($) {
+    const
+        $cartBtn = $('.cart-btn'),
+        $cart = $('.s-cart'),
+        $sCartClose = $('.s-cart__close');
+
+    $cartBtn.on('click', () => {
+        $cart.show(270);
+    });
+
+    $sCartClose.on('click', () => {
+        $cart.hide(270);
+    })
+});
+
