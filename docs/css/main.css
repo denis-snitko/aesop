@@ -5275,6 +5275,7 @@ body {
 
 .login-modal__input-email label {
   position: absolute;
+  z-index: 10;
   top: 10px;
   left: 10px;
   font-size: 24px;
@@ -5286,12 +5287,15 @@ body {
 }
 
 .login-modal__input-email input {
+  position: relative;
+  z-index: 20;
   width: 100%;
   margin-bottom: 65px;
   padding: 10px;
   font-size: 24px;
   line-height: 28px;
   color: #333333;
+  background: transparent;
   border: none;
   border-bottom: 1px solid #999;
   outline: none;
