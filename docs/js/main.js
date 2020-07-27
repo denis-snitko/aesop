@@ -33,6 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    //Open Cart
+    const cartBtn = document.querySelector('.cart-btn');
+    const cart = document.querySelector('.s-cart');
+    cartBtn.addEventListener('click', () => {
+        cart.classList.add('show-cart');
+    })
+    
+
     // Animation Label
     const inputMail = document.querySelectorAll('.login-modal__email');
 

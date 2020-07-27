@@ -1,0 +1,18 @@
+.s-cart {
+    position: relative;
+    z-index: 500;
+    overflow: hidden;
+    height: 0;
+    color: #BCBBB4;
+    background-color: #252525;
+    
+    
+    &__body {
+        padding: 40px;
+    }
+}
+
+
+.show-cart {
+    height: auto;
+}
