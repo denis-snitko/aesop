@@ -4965,6 +4965,10 @@ body {
   padding: 125px 0;
 }
 
+.s-product-slider a {
+  display: block;
+}
+
 .product-item {
   text-align: center;
 }
