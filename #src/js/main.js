@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 AOS.init();
 
-/** Cart */
+
 jQuery(function ($) {
     const
         $cartBtn = $('.cart-btn'),
@@ -81,7 +81,14 @@ jQuery(function ($) {
         $sCartClose = $('.s-cart__close'),
         $sTopHeader = $('.s-top-header'),
         $sDelivery = $('.s-delivery'),
-        $sDeliveryClose = $('.s-delivery__close');
+        $sDeliveryClose = $('.s-delivery__close'),
+        $mainMenuLink = $('.main-menu__link'),
+        $burgerMenu = $('.burger-menu'),
+        $burgerMenuMainItem_1 = $('.burger-menu__main-item--1'),
+        $burgerMenuMainItem_2 = $('.burger-menu__main-item--2'),
+        $burgerMenuMainItem_3 = $('.burger-menu__main-item--3'),
+        $burgerMenuItem = $('.burger-menu__item'),
+        $burgerMenuClose = $('.burger-menu__close');
 
     $cartBtn.on('click', () => {
         $cart.show(270);
@@ -100,6 +107,32 @@ jQuery(function ($) {
     
     $sDeliveryClose.on('click', () => {
         $sDelivery.hide(270);
+        $('body').attr('style', 'overflow: auto');
+    })
+
+    $mainMenuLink.on('click', () => {
+        $burgerMenu.show(500);
+        $burgerMenuMainItem_1.show(500);
+        $('body').attr('style', 'overflow: hidden');
+    })
+    
+    $burgerMenuItem.on('click', () => {
+        $burgerMenuMainItem_2.show(500);
+        $burgerMenuMainItem_2.attr('style', 'display: flex');
+        // $('body').attr('style', 'overflow: hidden');
+    })
+    
+    $('.burger-menu__main-item--2 .burger-menu__item').on('click', () => {
+        $burgerMenuMainItem_3.show(500);
+        // $burgerMenuMainItem_2.attr('style', 'display: flex');
+        // $('body').attr('style', 'overflow: hidden');
+    })
+
+    $burgerMenuClose.on('click', () => {
+        $burgerMenu.hide(500);
+        $burgerMenuMainItem_1.hide();
+        $burgerMenuMainItem_2.hide();
+        $burgerMenuMainItem_3.hide();
         $('body').attr('style', 'overflow: auto');
     })
 });
