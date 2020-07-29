@@ -5571,8 +5571,7 @@ body {
 
 .s-delivery__body-wrapper {
   overflow-y: auto;
-  width: 100%;
-  max-width: 586px;
+  width: 500px;
   padding: 0 30px;
 }
 
@@ -5886,6 +5885,10 @@ body {
     margin-bottom: 30px;
   }
 
+  .s-delivery__body {
+    width: 70%;
+  }
+
   .p-catalog__text {
     width: calc(100% - 30px);
   }
@@ -5957,6 +5960,15 @@ body {
 
   .s-product-description__text {
     margin: 0 auto;
+  }
+
+  .s-delivery__body {
+    width: 100%;
+  }
+
+  .s-delivery__body-wrapper {
+    width: 320px;
+    padding: 0;
   }
 }
 
