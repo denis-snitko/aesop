@@ -78,8 +78,10 @@ jQuery(function ($) {
     const
         $cartBtn = $('.cart-btn'),
         $cart = $('.s-cart'),
-        $sCartClose = $('.s-cart__close');
-        $sTopHeader = $('.s-top-header');
+        $sCartClose = $('.s-cart__close'),
+        $sTopHeader = $('.s-top-header'),
+        $sDelivery = $('.s-delivery'),
+        $sDeliveryClose = $('.s-delivery__close');
 
     $cartBtn.on('click', () => {
         $cart.show(270);
@@ -89,6 +91,16 @@ jQuery(function ($) {
     $sCartClose.on('click', () => {
         $cart.hide(270);
         $sTopHeader.show();
+    })
+    
+    $sTopHeader.on('click', () => {
+        $sDelivery.show(270);
+        $('body').attr('style', 'overflow: hidden');
+    })
+    
+    $sDeliveryClose.on('click', () => {
+        $sDelivery.hide(270);
+        $('body').attr('style', 'overflow: auto');
     })
 });
 

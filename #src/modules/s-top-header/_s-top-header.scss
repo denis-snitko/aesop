@@ -7,15 +7,26 @@
 
     background-color: #252525;
 
+        cursor: pointer;
+
+        &:hover .s-top-header__text{
+            // text-decoration: underline;
+            border-bottom: 1px solid #fffef2;
+        }
+
     // .s-top-header__text
 
     &__text {
-        margin-right: 10px;
-        padding: 0 15px;
+        margin-right: 25px;
+        margin-left: 15px;
         font-size: 14px;
         line-height: 21px;
 
         color: #fffef2;
+
+        border-bottom: 1px solid transparent;
+
+        transition: $base-transition;
 
         @include sm-block() {
             font-size: 10px;

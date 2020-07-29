@@ -4715,6 +4715,7 @@ body {
 /* Base styles */
 
 .main-body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4839,14 +4840,23 @@ body {
           align-items: center;
   padding: 12px 0;
   background-color: #252525;
+  cursor: pointer;
+}
+
+.s-top-header:hover .s-top-header__text {
+  border-bottom: 1px solid #fffef2;
 }
 
 .s-top-header__text {
-  margin-right: 10px;
-  padding: 0 15px;
+  margin-right: 25px;
+  margin-left: 15px;
   font-size: 14px;
   line-height: 21px;
   color: #fffef2;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .s-top-header__button {
@@ -5517,6 +5527,87 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 28px 0;
+}
+
+.s-delivery {
+  position: fixed;
+  z-index: 600;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.s-delivery__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  padding: 0 187px;
+  background-color: #ffffff;
+}
+
+.s-delivery__close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.s-delivery__body-wrapper {
+  overflow-y: auto;
+  width: 100%;
+  max-width: 586px;
+  padding: 0 30px;
+}
+
+.s-delivery__title,
+.s-delivery h4 {
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.s-delivery h4 {
+  border: none;
+}
+
+.s-delivery__text {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.s-delivery__text p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.s-delivery__text-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .login-modal {
