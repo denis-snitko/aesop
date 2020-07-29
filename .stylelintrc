@@ -4,6 +4,7 @@
   ],
   "rules": {
     "order/properties-order": [
+      "content",
       "position",
       "z-index",
       "top",
@@ -95,7 +96,6 @@
       "tab-size",
       "hyphens",
       "pointer-events",
-      "content",
       "quotes",
       "counter-reset",
       "counter-increment",

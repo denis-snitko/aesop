@@ -111,25 +111,25 @@ jQuery(function ($) {
     })
 
     $mainMenuLink.on('click', () => {
-        $burgerMenu.show(500);
-        $burgerMenuMainItem_1.show(500);
+        $burgerMenu.show(320);
+        $burgerMenuMainItem_1.show(320);
         $('body').attr('style', 'overflow: hidden');
     })
     
     $burgerMenuItem.on('click', () => {
-        $burgerMenuMainItem_2.show(500);
+        $burgerMenuMainItem_2.show(320);
         $burgerMenuMainItem_2.attr('style', 'display: flex');
         // $('body').attr('style', 'overflow: hidden');
     })
     
     $('.burger-menu__main-item--2 .burger-menu__item').on('click', () => {
-        $burgerMenuMainItem_3.show(500);
+        $burgerMenuMainItem_3.show(320);
         // $burgerMenuMainItem_2.attr('style', 'display: flex');
         // $('body').attr('style', 'overflow: hidden');
     })
 
     $burgerMenuClose.on('click', () => {
-        $burgerMenu.hide(500);
+        $burgerMenu.hide(320);
         $burgerMenuMainItem_1.hide();
         $burgerMenuMainItem_2.hide();
         $burgerMenuMainItem_3.hide();
