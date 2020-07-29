@@ -3,12 +3,62 @@
     z-index: 500;
     display: none;
     overflow: hidden;
-    color: #BCBBB4;
+    color: #bcbbb4;
     background-color: #252525;
-    
-    
+
     &__body {
-        padding: 40px;
+        padding: 40px 0;
+    }
+
+    &__body-row {
+        @include row-flex();
+        justify-content: space-between;
+
+        color: #bcbbb4;
+
+        border-bottom: 1px solid rgba(255, 254, 242, 0.1);
+
+        &--title {
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+
+    &__body-col {
+        @include col();
+        @include size(3);
+        padding: 26px 0;
+
+        .name {
+            color: #ffffff;
+        }
+
+        .remove {
+            font-size: 13px;
+
+            color: #bcbbb4;
+
+            cursor: pointer;
+        }
+
+        &--price {
+            text-align: end;
+        }
+
+        form {
+            display: inline-block;
+            margin-right: 30px;
+
+            select {
+                color: #fff;
+                background: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            option {
+                color: #333;
+            }
+        }
     }
 
     &__close {
@@ -16,5 +66,49 @@
         top: 40px;
         right: 40px;
         cursor: pointer;
+    }
+
+    &__body-btn-wrapper {
+        max-width: 645px;
+        margin-top: 54px;
+        margin-left: auto;
+
+        p {
+            font-size: 15px;
+            line-height: 18px;
+
+            color: #bcbbb4;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 29px;
+
+            color: #ffffff;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 20px;
+            background: #ffffff;
+            border: 1px solid #ffffff;
+
+            transition: $base-transition;
+
+            cursor: pointer;
+
+            &:hover {
+                color: #ffffff;
+                background: transparent;
+            }
+        }
+    }
+
+    &__body-btn-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 28px 0;
     }
 }
