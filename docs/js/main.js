@@ -79,13 +79,16 @@ jQuery(function ($) {
         $cartBtn = $('.cart-btn'),
         $cart = $('.s-cart'),
         $sCartClose = $('.s-cart__close');
+        $sTopHeader = $('.s-top-header');
 
     $cartBtn.on('click', () => {
         $cart.show(270);
+        $sTopHeader.hide();
     });
 
     $sCartClose.on('click', () => {
         $cart.hide(270);
+        $sTopHeader.show();
     })
 });
 
