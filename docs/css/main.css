@@ -5995,6 +5995,23 @@ body {
   color: #333;
 }
 
+.p-ourstory__swiper-container {
+  position: relative;
+  overflow: hidden;
+  height: 90vh;
+}
+
+.p-ourstory__swiper-container .swiper-scrollbar {
+  margin-top: 20px;
+}
+
+.p-ourstory__swiper-container img {
+  width: 100%;
+  height: 88vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-ourstory-history {
   padding: 120px 0;
 }

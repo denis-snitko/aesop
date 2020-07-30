@@ -33,6 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    let ourstorySwiper = new Swiper('.p-ourstory__swiper-container', {
+        slidesPerView: 1,
+
+        navigation: {
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next'
+        },
+
+        scrollbar: {
+          el: '.swiper-scrollbar',
+          hide: false,
+        }
+      });
+
     // Animation Label
     const inputMail = document.querySelectorAll('.login-modal__email');
 
