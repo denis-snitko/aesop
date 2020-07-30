@@ -155,6 +155,12 @@
             font-size: 14px;
 
             transition: $base-transition;
+
+
+            @include sm-block() {
+                display: none !important;
+                opacity: 0;
+            }
         }
 
         &:hover span {

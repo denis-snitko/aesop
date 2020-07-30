@@ -6553,6 +6553,11 @@ body {
   .login-modal__input-email input {
     font-size: 16px;
   }
+
+  .accordeon__content-title span {
+    display: none !important;
+    opacity: 0;
+  }
 }
 
 @media print, (prefers-reduced-motion: reduce) {
