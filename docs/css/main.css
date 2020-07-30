@@ -4777,6 +4777,22 @@ body {
   width: calc(58.33333% - 30px);
 }
 
+.base-text p {
+  margin-bottom: 26px;
+  line-height: 27px;
+}
+
+.top-title {
+  max-width: 775px;
+}
+
+.top-title h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+
 .swiper-container {
   margin: 0 80px;
   padding-bottom: 40px;
@@ -6159,17 +6175,6 @@ body {
   width: 100%;
 }
 
-.p-careers__top-title {
-  max-width: 775px;
-}
-
-.p-careers__top-title h1 {
-  margin-bottom: 32px;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 40px;
-}
-
 .p-careers .img-descr {
   padding: 30px 10px;
   font-size: 14px;
@@ -6259,6 +6264,44 @@ body {
 
 .accordeon__text {
   display: none;
+}
+
+.p-gifts__top-block {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.p-gifts img {
+  width: 100%;
+}
+
+.p-gifts__download {
+  padding-top: 120px;
+}
+
+.p-gifts__list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.p-gifts__item {
+  margin-bottom: 25px;
+}
+
+.p-gifts a {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.p-gifts a:hover {
+  color: #333;
+}
+
+.p-gifts .base-text {
+  max-width: 768px;
 }
 
 /* END MAIN STYLES */
@@ -6504,6 +6547,19 @@ body {
 
   .p-careers__accordeon-text {
     margin-bottom: 60px;
+  }
+
+  .p-gifts__logo {
+    margin-bottom: 40px;
+  }
+
+  .p-gifts__top-block {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .p-gifts__download {
+    padding-top: 60px;
   }
 }
 

@@ -22,7 +22,7 @@
         &--margin {
             @include md-block() {
                 margin-bottom: 50px;
-            }   
+            }
         }
     }
 
@@ -39,16 +39,6 @@
 
     img {
         width: 100%;
-    }
-
-    &__top-title {
-        max-width: 775px;
-        h1 {
-            margin-bottom: 32px;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 40px;
-        }
     }
 
     .img-descr {
@@ -155,7 +145,6 @@
             font-size: 14px;
 
             transition: $base-transition;
-
 
             @include sm-block() {
                 display: none !important;

@@ -36,6 +36,24 @@
     @include size-md(12);
 }
 
+.base-text {
+    p {
+        margin-bottom: 26px;
+        line-height: 27px;
+    }
+}
+
+
+.top-title {
+    max-width: 775px;
+    h1 {
+        margin-bottom: 20px;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+
 
 .swiper-container {
     // position: relative;

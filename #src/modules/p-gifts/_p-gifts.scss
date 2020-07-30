@@ -1,0 +1,56 @@
+.p-gifts {
+
+    &__logo {
+        @include md-block() {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__top-block {
+        padding-top: 120px;
+        padding-bottom: 80px;
+
+        @include md-block() {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &__download {
+        padding-top: 120px;
+
+        @include md-block() {
+            padding-top: 60px;
+        }
+    }
+
+    &__list {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #666666;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    a {
+        font-weight: inherit;
+        font-size: inherit;
+        color: inherit;
+
+        &:hover {
+            color: #333;
+        }
+    }
+
+    .base-text {
+        max-width: 768px;
+    }
+}
