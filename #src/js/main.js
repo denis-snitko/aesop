@@ -135,5 +135,17 @@ jQuery(function ($) {
         $burgerMenuMainItem_3.hide();
         $('body').attr('style', 'overflow: auto');
     })
+
+    //** Scroll */
+    $('.p-ourstory__btn').on( 'click', function(){ 
+        let $dest = $('.p-ourstory-history'); // куда скролим
+        if($dest !== undefined && $dest !== '') { // проверяем существование
+            $('html').animate({ 
+                scrollTop: $($dest).offset().top // прокручиваем страницу к требуемому элементу
+            }, 500 // скорость прокрутки
+            );
+        }
+        return false;
+    });
 });
 

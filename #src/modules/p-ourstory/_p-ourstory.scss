@@ -8,9 +8,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }
 
-    &__logo {
+        @include md-block() {
+            padding-top: 60px;
+        }
     }
 
     &__main-text {
@@ -23,7 +24,6 @@
         transform: translateX(-50%);
 
         @include md-block {
-            top: 200px;
             width: 100%;
             padding: 0 15px;
         }
@@ -61,10 +61,6 @@
         }
     }
 
-    &__history {
-        padding: 120px 0;
-    }
-
     &__main-body {
         background-color: #ede1d5;
 
@@ -76,6 +72,113 @@
     &__footer {
         .s-footer {
             background-color: #ede1d5;
+        }
+    }
+
+    .s-phrase {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 120px 0;
+
+        @include md-block() {
+            padding: 60px 0;
+        }
+
+         a {
+             font-size: 14px;
+             color: #333;
+         }
+    }
+}
+
+.p-ourstory-history {
+    padding: 120px 0;
+
+    @include md-block() {
+        padding: 60px 0;
+    }
+
+    &__body {
+        @include row-flex();
+    }
+
+    &__col-6 {
+        @include col();
+        @include size(6);
+        @include size-md(12);
+
+        padding: 0 15px;
+
+        @include md-block() {
+            padding-top: 60px;
+        }
+
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            border-right: 1px solid #d5cabf;
+
+            @include md-block() {
+                border: none;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 630px;
+    }
+
+    &__title {
+        margin-bottom: 92px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__text {
+        margin-bottom: 77px;
+        line-height: 27px;
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #333;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 100%;
+            max-width: 640px;
+        }
+    }
+
+    &--reverse {
+        .p-ourstory-history__body {
+            flex-direction: row-reverse;
+        }
+
+        .p-ourstory-history__col-6 {
+            &:first-child {
+                border-right: none;
+            }
+            
+            &:last-child {
+                border-right: 1px solid #d5cabf;
+
+                @include md-block() {
+                    border: none;
+                }
+            }
+
+            
         }
     }
 }
