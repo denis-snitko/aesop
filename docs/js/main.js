@@ -42,10 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         scrollbar: {
-          el: '.swiper-scrollbar',
-          hide: false,
+            el: '.swiper-scrollbar',
+            hide: false,
         }
-      });
+    });
 
     // Animation Label
     const inputMail = document.querySelectorAll('.login-modal__email');
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 });
 
-AOS.init();
+
 
 
 jQuery(function ($) {
@@ -113,12 +113,12 @@ jQuery(function ($) {
         $cart.hide(270);
         $sTopHeader.show();
     })
-    
+
     $sTopHeader.on('click', () => {
         $sDelivery.show(270);
         $('body').attr('style', 'overflow: hidden');
     })
-    
+
     $sDeliveryClose.on('click', () => {
         $sDelivery.hide(270);
         $('body').attr('style', 'overflow: auto');
@@ -129,13 +129,13 @@ jQuery(function ($) {
         $burgerMenuMainItem_1.show(320);
         $('body').attr('style', 'overflow: hidden');
     })
-    
+
     $burgerMenuItem.on('click', () => {
         $burgerMenuMainItem_2.show(320);
         $burgerMenuMainItem_2.attr('style', 'display: flex');
         // $('body').attr('style', 'overflow: hidden');
     })
-    
+
     $('.burger-menu__main-item--2 .burger-menu__item').on('click', () => {
         $burgerMenuMainItem_3.show(320);
         // $burgerMenuMainItem_2.attr('style', 'display: flex');
@@ -151,15 +151,25 @@ jQuery(function ($) {
     })
 
     //** Scroll */
-    $('.p-ourstory__btn').on( 'click', function(){ 
+    $('.p-ourstory__btn').on('click', function () {
         let $dest = $('.p-ourstory-history'); // куда скролим
-        if($dest !== undefined && $dest !== '') { // проверяем существование
-            $('html').animate({ 
+        if ($dest !== undefined && $dest !== '') { // проверяем существование
+            $('html').animate({
                 scrollTop: $($dest).offset().top // прокручиваем страницу к требуемому элементу
             }, 500 // скорость прокрутки
             );
         }
         return false;
     });
+
+
+    //** Accordeon  */
+    const $accordeonContTitle = $('.accordeon__content-title');
+
+    $accordeonContTitle.on('click', function () {
+        $(this).next().fadeToggle();
+        $(this).children().toggle();
+    })
 });
 
+AOS.init();

@@ -14,6 +14,29 @@
     @include container();
 }
 
+.base-row-flex {
+    @include row-flex();
+}
+
+.base-col-5{
+    @include col();
+    @include size(5);
+    @include size-md(12);
+}
+
+.base-col-6{
+    @include col();
+    @include size(6);
+    @include size-md(12);
+}
+
+.base-col-7{
+    @include col();
+    @include size(7);
+    @include size-md(12);
+}
+
+
 .swiper-container {
     // position: relative;
     // z-index: 4;

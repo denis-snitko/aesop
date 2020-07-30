@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Aesop | Страница товара</title>
+</head>
+
+<body>
+    <div class="main-body">
+        <!-- s-cart -->
+<div class="s-cart">
+    <div class="container">
+        <div class="s-cart__body">
+            <div class="s-cart__body-row s-cart__body-row--title">
+                <div class="s-cart__body-col">Cart</div>
+                <div class="s-cart__body-col">Size</div>
+                <div class="s-cart__body-col">Quantity</div>
+                <div class="s-cart__body-col">
+                    <div class="s-cart__close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                                fill="#BCBBB4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="s-cart__body-row">
+                <div class="s-cart__body-col"><span class="name">Citrus Melange Body Cleanser</span></div>
+                <div class="s-cart__body-col">500 mL</div>
+                <div class="s-cart__body-col">
+                    <form action="#">
+                        <select name="amount">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </form>
+                    <span class="remove">Remove</span>
+                </div>
+                <div class="s-cart__body-col s-cart__body-col--price">37,00 €</div>
+            </div>
+            <div class="s-cart__body-btn-wrapper">
+                <p>Enjoy complimentary shipping on all orders within France.</p>
+                <div class="s-cart__body-btn-text">
+                    <p>Subtotal (Tax Incl.)</p>
+                    <span>37,00 €</span>
+                </div>
+                <button class="btn">Checkout</button>
+                <div class="s-cart__body-btn-credit">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.s-cart -->
+        <!-- s-delivery -->
+<div class="s-delivery">
+    <div class="s-delivery__body">
+        <div class="s-delivery__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                    fill="#252525" />
+            </svg>
+        </div>
+
+        <div class="s-delivery__body-wrapper">
+            <div class="s-delivery__title">Shipping and delivery times</div>
+            <div class="s-delivery__text">
+                <div class="s-delivery__text-wrapper">
+                    <h4>Colissimo (France)</h4>
+                    <p>3 business days</p>
+                </div>
+                <div class="s-delivery__text-wrapper">
+                    <p>All orders</p>
+                    <p>Complimentary</p>
+                </div>
+            </div>
+            <div class="s-delivery__text">
+                <div class="s-delivery__text-wrapper">
+                    <h4>Colissimo (Europe)</h4>
+                    <p>6 business days</p>
+                </div>
+                <div class="s-delivery__text-wrapper">
+                    <p>All orders</p>
+                    <p>Complimentary</p>
+                </div>
+            </div>
+            <div class="s-delivery__text">
+                <div class="s-delivery__text-wrapper">
+                    <h4>Colissimo (Paris)</h4>
+                    <p>4 business days</p>
+                </div>
+                <div class="s-delivery__text-wrapper">
+                    <p>All orders</p>
+                    <p>Complimentary</p>
+                </div>
+            </div>
+            <div class="s-delivery__text">
+                <div class="s-delivery__text-wrapper">
+                    <h4>Colissimo (France)</h4>
+                    <p>3 business days</p>
+                </div>
+                <div class="s-delivery__text-wrapper">
+                    <p>All orders</p>
+                    <p>Complimentary</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- /.s-delivery -->
+        <!-- .s-top-header -->
+<div class="s-top-header">
+    <div class="s-top-header__text">
+        <p>Enjoy complimentary shipping on all orders within France.</p>
+    </div>
+    <button class="s-top-header__button">
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M5.5281 0.687988H4.4721V4.51599H0.600098V5.61599H4.4721V9.44399H5.5281V5.61599H9.4001V4.51599H5.5281V0.687988Z"
+                fill="white" />
+        </svg>
+    </button>
+</div>
+<!-- /.s-top-header -->
+        <!-- .s-header -->
+<header class="s-header">
+    <div class="container">
+        <div class="s-header__body">
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a class="main-menu__link" href=#>Shop</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href=#>Search</a></li>
+                </ul>
+            </nav>
+            <div class="login-wrapper">
+                <button class="login-btn">Login</button>
+                <button class="cart-btn">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M2.7255 5.2857H11.353M10.4635 4.82327C10.2517 2.99027 8.7997 1.57141 7.03926 1.57141C5.27881 1.57141 3.8268 2.99027 3.61543 4.82327C3.58566 5.0777 3.39586 5.2857 3.15688 5.2857H2.72032C2.24711 5.2857 1.86275 5.69938 1.86275 6.2087L1 15.5056C1 16.0149 1.38479 16.4286 1.85757 16.4286H12.1424C12.6165 16.4286 13 16.0144 13 15.5056L12.1372 6.2087C12.1372 5.69938 11.7538 5.2857 11.2797 5.2857H10.9216C10.6835 5.2857 10.4933 5.0777 10.4635 4.82327Z"
+                            stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /.s-header -->
+
+<!-- burger-menu -->
+<div class="burger-menu">
+    <div class="burger-menu__close">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                fill="#252525" />
+        </svg>
+    </div>
+    <div class="burger-menu__body">
+        <div class="burger-menu__main-item burger-menu__main-item--1">
+            <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item"><a class="main-menu__link" href=#>Shop</a></li>
+                    <li class="main-menu__item"><a class="main-menu__link" href=#>Search</a></li>
+                </ul>
+            </nav>
+            <div class="logo burger-menu__logo">
+                <img src="./img/svg/logo.svg" alt="Logo">
+            </div>
+            <ul class="burger-menu__list">
+                <li class="burger-menu__item"><a href="#">Skin<span>100</span></a></li>
+                <li class="burger-menu__item"><a href="#">Hair</a></li>
+                <li class="burger-menu__item"><a href="#">Body & Hand</a></li>
+                <li class="burger-menu__item"><a href="#">Fragrance</a></li>
+                <li class="burger-menu__item"><a href="#">Home</a></li>
+                <li class="burger-menu__item"><a href="#">Kits & Travel<span>42</span></a></li>
+                <li class="burger-menu__item"><a href="#">Gifts</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu__main-item burger-menu__main-item--2">
+            <ul class="burger-menu__list">
+                <li class="burger-menu__item"><a href="#">See All</a></li>
+                <li class="burger-menu__item"><a href="#">Skin</a></li>
+                <li class="burger-menu__item"><a href="#">Hair</a></li>
+                <li class="burger-menu__item"><a href="#">Body & Hand</a></li>
+                <li class="burger-menu__item"><a href="#">Fragrance</a></li>
+                <li class="burger-menu__item"><a href="#">Home</a></li>
+                <li class="burger-menu__item"><a href="#">Kits & Travel</a></li>
+                <li class="burger-menu__item"><a href="#">Gifts</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu__main-item burger-menu__main-item--3">
+            main-item-3
+        </div>
+    </div>
+</div>
+<!-- /.burger-menu -->
+
+        <div class="main-content">
+            <div class="p-careers">
+    <div class="container">
+        <div class="p-careers__top-block" data-aos="fade-right" data-aos-duration="500">
+            <div class="base-row-flex">
+                <div class="base-col-5">
+                    <div class="logo p-careers__logo">
+                        <img src="./img/svg/logo.svg" alt="Logo">
+                    </div>
+                </div>
+                <div class="base-col-7">
+                    <div class="p-careers__top-title">
+                        <h1>Career opportunities</h1>
+                        <p>Aesop workplaces are distinguished by a rare blend of courtesy, cordiality and intellectual
+                            energy. We seek skilled individuals who can bring a wealth of life experience and inspired
+                            ideas to our table. As a company, we nurture curious individuals who share our interests in
+                            design and incisive enquiry across all fields.</p>
+                        <button class="hero-btn p-careers__btn">Browse current openings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-careers__img-block" data-aos="fade-right" data-aos-duration="500">
+            <img src="./img/p-careers-img-1.jpg" alt="#">
+        </div>
+
+        <div class="p-careers__right-text">
+            <h3>A global endeavour</h3>
+            <p>We support an entrepreneurial spirit and cultivate a professional environment in which our employees are
+                challenged to give their best; attention to detail and the pursuit of excellence are traits we
+                encourage.</p>
+            <p>We offer employees professional development and opportunities for advancement, within our regional and
+                global offices, and retail stores around the world. All our workplaces interact regularly, exposing
+                employees to different cultures and perspectives. This often manifests in enduring relationships and the
+                occasional shared bottle of red wine.</p>
+            <p>We value a diverse workplace. Women, people of colour, people with disabilities, and members of the LGBTQ
+                community are strongly encouraged to apply. We believe an equitable and inclusive work environment, and
+                a diverse, empowered team are key to achieving our mission.</p>
+        </div>
+
+        <section class="p-careers__read-more" data-aos="fade-right" data-aos-duration="500">
+            <div class="base-row-flex">
+                <div class="base-col-5">
+                    <div class="forum-title">
+                        Our Signature Stores, counters and offices across the globe, collaborate and cultivate our
+                        retail focus.
+                    </div>
+                    <button class="hero-btn p-careers__btn p-careers__btn--margin">Read more about Aesop</button>
+                </div>
+                <div class="base-col-7">
+                    <img src="./img/p-careers-img-2.jpg" alt="#">
+                    <div class="img-descr">
+                        <p>An induction programme in session at Aesop Global Head Office, Melbourne.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-careers__accordeon">
+            <div class="base-row-flex">
+                <div class="base-col-5">
+                    <div class="forum-title">
+                        Our Signature Stores, counters and offices across the globe, collaborate and cultivate our
+                        retail focus.
+                    </div>
+                </div>
+                <div class="base-col-7">
+                    <div class="p-careers__accordeon-text">
+                        <h3>Notes on culture</h3>
+                        <p>Authenticity is integral to who we are, and we maintain a strong appreciation of our
+                            beginnings.
+                            To apply what we have learned through more than thirty years’ experience, each employee is
+                            taken
+                            through a thorough introduction to our product range and retail service philosophy.</p>
+                        <p>While we hold fast to our key principles that ensure the quality of our products and service,
+                            we
+                            embrace diverse skills and actively encourage exploration of boundaries, to determine new
+                            potential and ideas.</p>
+                    </div>
+
+                    <div class="accordeon">
+                        <div class="accordeon__title">Frequently asked questions</div>
+                        <div class="accordeon__descr">To inform your application, we encourage you to read more about
+                            our recruitment process at Aesop.</div>
+                        <div class="accordeon__body">
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">What is the recruitment process at Aesop?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">How long does the recruitment process take?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">How do I apply for a position at Aesop?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">What does Aesop look for in a candidate?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">I am having trouble with submitting my application, what
+                                    should I do?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">How do I learn more about a position before applying?<span>See more</span>
+                                </div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordeon__content">
+                                <div class="accordeon__content-title">What should I include in my application?<span>See more</span></div>
+                                <div class="accordeon__text">
+                                    <p>When completing an application online, you will be required to answer a series of
+                                        questions about yourself, and will be asked to submit your resume. If you have
+                                        additional information to submit, you can upload this online as part of your
+                                        application. If you are applying for a position within our Creative, Marketing,
+                                        Digital, or Design teams, please ensure that you include your portfolio of work.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- s-phrase -->
+        <section class="s-phrase" data-aos="fade-right" data-aos-duration="500">
+            <div class="container">
+                <div class="s-phrase__text">
+                    <p>We invite you to browse Aesop career opportunities.
+                    </p>
+                </div>
+                <a href="#" class="s-phrase__author">Browse current openings <span>→</span></a>
+            </div>
+        </section>
+        <!-- /.s-phrase -->
+
+        <section class="p-careers__images" data-aos="fade-right" data-aos-duration="500">
+            <div class="base-row-flex">
+                <div class="base-col-6">
+                    <img src="./img/p-careers-img-3.jpg" alt="#">
+                    <div class="img-descr">
+                        <p>A tactile approach infuses our work, from our product development to our retail service and
+                            visual merchandising.</p>
+                    </div>
+                </div>
+                <div class="base-col-6">
+                    <img src="./img/p-careers-img-4.jpg" alt="#">
+                    <div class="img-descr">
+                        <p>Our passion for creativity in form and function, extends to the setting of a meal among
+                            staff.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- s-phrase -->
+        <section class="s-phrase" data-aos="fade-right" data-aos-duration="500">
+            <div class="container">
+                <div class="s-phrase__text">
+                    <p>‘Nothing great in the world has ever been accomplished without passion.’</p>
+                </div>
+                <p class="s-phrase__author">Georg Wilhelm Friedrich Hegel</p>
+            </div>
+        </section>
+        <!-- /.s-phrase -->
+    </div>
+</div>
+        </div>
+        
+    </div>
+
+   
+     <!-- s-footer -->
+<footer class="s-footer" data-aos="fade-right" data-aos-duration="500">
+    <div class="container">
+        <div class="s-footer-body">
+            <div class="s-footer-row">
+                <div class="s-footer-row__col-6">
+                    <h4 class="s-footer__menu-title">Subscribe</h4>
+                    <form action="#">
+                        <p class="login-modal__input-email">
+                            <label for="login-modal__email" class="login-modal__label">Email address</label>
+                            <input type="email" name="email" id="login-modal__email" class="login-modal__email">
+                        </p>
+                        <button class="hero-btn" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="s-footer-row__col-3">
+                    <h4 class="s-footer__menu-title">Orders & Support</h4>
+                    <ul class="s-footer__menu">
+                        <li class="s-footer__item"><a href="#">Contact us</a></li>
+                        <li class="s-footer__item"><a href="#">FAQs</a></li>
+                        <li class="s-footer__item"><a href="#">Delivery and returns</a></li>
+                        <li class="s-footer__item"><a href="#">Terms and conditions</a></li>
+                        <li class="s-footer__item"><a href="#">Track your order</a></li>
+                    </ul>
+                </div>
+                <div class="s-footer-row__col-3">
+                    <h4 class="s-footer__menu-title">About</h4>
+                    <ul class="s-footer__menu">
+                        <li class="s-footer__item"><a href="#">Our story</a></li>
+                        <li class="s-footer__item"><a href="#">Careers</a></li>
+                        <li class="s-footer__item"><a href="#">Press</a></li>
+                        <li class="s-footer__item"><a href="#">Corporate gifts</a></li>
+                        <li class="s-footer__item"><a href="#">Facial appointments</a></li>
+                        <li class="s-footer__item"><a href="#">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="s-footer-row__col-3">
+                    <h4 class="s-footer__menu-title">Social media</h4>
+                    <ul class="s-footer__menu s-footer__menu--social">
+                        <li class="s-footer__item"><a href="#" target="_blank">Instagram</a></li>
+                        <li class="s-footer__item"><a href="#" target="_blank">Twitter</a></li>
+                        <li class="s-footer__item"><a href="#" target="_blank">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /.s-footer -->
+    
+    <div class="s-copyright">
+    <div class="container">
+        <p>
+            &copy; Разработка и продвижение сайта - <a href="#">Студия ЯР</a>
+        </p>
+    </div>
+</div>
+    
+    <!-- login-modal -->
+<div class="login-modal login-modal--hidden">
+    <div class="login-modal__body">
+        <div class="login-modal__close">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                fill="#252525" />
+            </svg>
+        </div>
+        <div class="login-modal__title">Good day.</div>
+        <div class="login-modal__descr">Please enter a valid email address</div>
+        <form action="#">
+            <p class="login-modal__input-email">
+                <label for="login-modal__email" class="login-modal__label">Email address</label>
+                <input type="email" name="email" id="login-modal__email" class="login-modal__email">
+            </p>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+</div>
+<!-- /.login-modal -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/vendors.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
