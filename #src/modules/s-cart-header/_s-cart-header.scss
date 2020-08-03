@@ -1,0 +1,50 @@
+.s-cart-header {
+    padding: 22px 0;
+    font-weight: 500;
+
+    color: #fff;
+    background-color: #252525;
+    // .s-cart-header__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .s-cart-header__cart
+
+    &__cart {
+        position: relative;
+        color: #bcbbb4;
+
+        p {
+            display: inline-block;
+            padding-right: 20px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 17px;
+                height: 17px;
+                background: url("../../img/svg/cart-img.svg") center no-repeat;
+            }
+        }
+
+        span {
+            position: absolute;
+            top: 4px;
+            right: 6px;
+            font-size: 10px;
+            color: #252525;
+        }
+    }
+
+    // .s-cart-header__price
+
+    &__price {
+        font-size: 23px;
+    }
+}

@@ -55,6 +55,23 @@ document.addEventListener('DOMContentLoaded', () => {
             event.target.previousElementSibling.classList.add('login-modal__label--top');
         })
     })
+   
+    // Animation Label (checkout)
+    const checkoutInput = document.querySelectorAll('.s-checkout-form__input');
+
+    checkoutInput.forEach(element => {
+        element.addEventListener('focus', (event) => {
+            event.target.previousElementSibling.classList.add('s-checkout-form__label--top');
+        })
+    })
+    
+    const checkoutSelect = document.querySelectorAll('.s-checkout-form__select');
+
+    checkoutSelect.forEach(element => {
+        element.addEventListener('focus', (event) => {
+            event.target.previousElementSibling.classList.add('s-checkout-form__label--top');
+        })
+    })
 
     //** Login-modal */
 
@@ -171,5 +188,3 @@ jQuery(function ($) {
         $(this).children().toggle();
     })
 });
-
-AOS.init();
