@@ -1483,6 +1483,38 @@ body {
   margin-bottom: 65px;
 }
 
+.shipping-detail {
+  margin-bottom: 250px;
+}
+
+.shipping-detail__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 65px;
+}
+
+.shipping-detail__title h4 {
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.shipping-detail__title a {
+  font-size: 14px;
+  color: #666666;
+}
+
+.shipping-detail p {
+  font-size: 24px;
+  color: #666666;
+}
+
 .s-cart {
   position: relative;
   z-index: 500;

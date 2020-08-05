@@ -1,10 +1,10 @@
 .s-checkout {
     padding: 150px 0;
-    
+
     @include sm-block() {
         padding: 60px 0;
     }
-    
+
     // .s-checkout__row
 
     &__row {
@@ -46,7 +46,7 @@
     }
 
     &__col-3,
-    &__col-4, 
+    &__col-4,
     &__col-6,
     &__col-8,
     &__col-12 {
@@ -65,7 +65,7 @@
         @include size(4.5);
         @include size-md(12);
     }
-   
+
     &__col-6 {
         @include size(6);
         @include size-md(12);
@@ -78,7 +78,7 @@
             margin-top: 65px;
         }
     }
-   
+
     &__col-12 {
         @include size(12);
         @include md-block() {
@@ -172,5 +172,32 @@
 
     .mb-65 {
         margin-bottom: 65px;
+    }
+}
+
+.shipping-detail {
+    margin-bottom: 250px;
+    
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 65px;
+       
+        h4 {
+            font-weight: 400;
+            font-size: 30px;
+        }
+
+        a {
+            font-size: 14px;
+            color: #666666;
+        }
+    }
+
+    p {
+        font-size: 24px;
+
+        color: #666666;
     }
 }
