@@ -102,6 +102,20 @@
         }
     }
 
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+
+        img {
+            width: 100px;
+            height: auto;
+            border: 1px solid #000;
+        }
+
+    }
+
     .main-menu {
         margin-bottom: 140px;
     }
@@ -137,10 +151,6 @@
         display: none;
         flex-direction: column;
         justify-content: center;
-
-        .burger-menu__item:first-child {
-            margin-bottom: 20px;
-        }
     }
 }
 
