@@ -73,37 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    //** Login-modal */
-
-    const
-        body = document.querySelector('body'), //для запрета скрола
-        modal = document.querySelector('.login-modal'), //модалка вместе с фоном
-        showModalBtn = document.querySelector('.login-btn'), // элемент который открывает модалку
-        closeModalBtn = document.querySelector('.login-modal__close'); // элемент закрытия модалки
-    hiddenClass = 'login-modal--hidden'; //класс закрытия
-
-    function toggleModal() {
-        modal.classList.toggle(hiddenClass);
-        if (modal.classList.contains(hiddenClass)) {
-            body.setAttribute('style', 'overflow: auto');
-        } else {
-            body.setAttribute('style', 'overflow: hidden');
-        }
-    }
-
-    showModalBtn.addEventListener('click', toggleModal);
-    closeModalBtn.addEventListener('click', toggleModal);
-
-    //** Закрытие при клике ВНЕ модалки */
-    modal.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            toggleModal();
-        }
-    })
-});
-
-
-
 
 jQuery(function ($) {
     const
