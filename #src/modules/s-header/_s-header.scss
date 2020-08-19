@@ -71,7 +71,7 @@
         position: absolute;
         z-index: 1000;
         top: 30px;
-        left: 950px;
+        right: 30px;
         padding: 15px;
         cursor: pointer;
     }
@@ -147,6 +147,7 @@
 
     
     .burger-menu__main-item--2 {
+        position: relative;
         display: flex;
         display: none;
         flex-direction: column;
