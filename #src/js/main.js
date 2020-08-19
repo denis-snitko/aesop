@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.target.previousElementSibling.classList.add('s-checkout-form__label--top');
         })
     })
-
+});
 
 jQuery(function ($) {
     const
