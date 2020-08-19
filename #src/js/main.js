@@ -113,11 +113,10 @@ jQuery(function ($) {
         $sTopHeader = $('.s-top-header'),
         $sDelivery = $('.s-delivery'),
         $sDeliveryClose = $('.s-delivery__close'),
-        $mainMenuLink = $('.main-menu__link'),
+        $mainMenuLink = $('.main-menu__item'),
         $burgerMenu = $('.burger-menu'),
         $burgerMenuMainItem_1 = $('.burger-menu__main-item--1'),
         $burgerMenuMainItem_2 = $('.burger-menu__main-item--2'),
-        $burgerMenuMainItem_3 = $('.burger-menu__main-item--3'),
         $burgerMenuItem = $('.burger-menu__item'),
         $burgerMenuClose = $('.burger-menu__close');
 
@@ -142,6 +141,7 @@ jQuery(function ($) {
     })
 
     $mainMenuLink.on('click', () => {
+        $burgerMenuMainItem_1.attr('style', 'display: flex');
         $burgerMenu.show(320);
         $burgerMenuMainItem_1.show(320);
         $('body').attr('style', 'overflow: hidden');
@@ -153,17 +153,10 @@ jQuery(function ($) {
         // $('body').attr('style', 'overflow: hidden');
     })
 
-    $('.burger-menu__main-item--2 .burger-menu__item').on('click', () => {
-        $burgerMenuMainItem_3.show(320);
-        // $burgerMenuMainItem_2.attr('style', 'display: flex');
-        // $('body').attr('style', 'overflow: hidden');
-    })
-
     $burgerMenuClose.on('click', () => {
         $burgerMenu.hide(320);
         $burgerMenuMainItem_1.hide();
         $burgerMenuMainItem_2.hide();
-        $burgerMenuMainItem_3.hide();
         $('body').attr('style', 'overflow: auto');
     })
 
