@@ -25,6 +25,7 @@
     @include size(2);
     @include size-xl(12);
     @include xl-block() {
+      order: -2;
       margin-bottom: 65px;
     }
   }
