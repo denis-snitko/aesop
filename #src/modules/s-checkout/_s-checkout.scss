@@ -1,21 +1,20 @@
 .s-checkout {
   padding: 150px 0;
 
-  @include sm-block() {
+  @include md-block() {
     padding: 60px 0;
+  
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
   }
-
-  // .s-checkout__row
-
+  
   &__row {
     @include row-flex();
     justify-content: space-between;
-    @include md-block() {
-    }
   }
-
-  // .s-checkout__col-3
-
+  
   &__col-2,
   &__col-3,
   &__col-7 {
@@ -35,7 +34,8 @@
     @include size-xl(5);
     @include size-md(12);
     @include md-block() {
-      margin-top: 65px;
+      order: -1;
+      margin-bottom: 65px;
     }
   }
 
@@ -269,6 +269,11 @@
   padding: 40px;
   color: #333;
   background: #FFFEF2;
+  
+  @include md-block() {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 
   &__title {
     margin-bottom: 40px;

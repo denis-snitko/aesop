@@ -2526,12 +2526,24 @@ body {
     margin: 0 auto;
   }
 
+  .s-checkout {
+    padding: 60px 0;
+  }
+
+  .s-checkout .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
   .s-checkout__col-3 {
     width: calc(100% - 30px);
   }
 
   .s-checkout__col-3 {
-    margin-top: 65px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-bottom: 65px;
   }
 
   .s-checkout__col-7 {
@@ -2564,6 +2576,11 @@ body {
 
   .s-checkout-form__col-12 {
     margin-top: 65px;
+  }
+
+  .order-details {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 
   .s-delivery__body {
@@ -2689,10 +2706,6 @@ body {
 
   .s-footer-row__col-3 {
     width: calc(100% - 30px);
-  }
-
-  .s-checkout {
-    padding: 60px 0;
   }
 
   .s-checkout-form__input {
