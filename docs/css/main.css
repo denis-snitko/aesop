@@ -710,6 +710,16 @@ body {
   border-right: 1px solid #dfdfd4;
 }
 
+.burger-menu__item-second {
+  padding: 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.burger-menu__item-second a {
+  color: inherit;
+}
+
 .burger-menu__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,6 +757,12 @@ body {
   font-size: inherit;
   line-height: inherit;
   color: inherit;
+}
+
+.burger-menu__item--link {
+  margin-bottom: 70px;
+  font-size: 26px;
+  color: #333;
 }
 
 .burger-menu .burger-menu__main-item--1 {
@@ -810,6 +826,12 @@ body {
 .language-form select {
   background: transparent;
   border: transparent;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
 }
 
 .s-hero {
