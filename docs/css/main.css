@@ -766,6 +766,7 @@ body {
 }
 
 .burger-menu .burger-menu__main-item--1 {
+  position: relative;
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
