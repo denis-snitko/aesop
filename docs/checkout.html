@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Aesop | checkout-6</title>
+</head>
+
+<body>
+    <div class="main-body main-body--checkout">
+        <!-- s-cart -->
+<div class="s-cart">
+    <div class="container">
+        <div class="s-cart__body">
+            <div class="s-cart__body-row s-cart__body-row--title">
+                <div class="s-cart__body-col">Cart</div>
+                <div class="s-cart__body-col">Size</div>
+                <div class="s-cart__body-col">Quantity</div>
+                <div class="s-cart__body-col">
+                    <div class="s-cart__close">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14 1.4L12.6 0L7 5.6L1.4 0L0 1.4L5.6 7L0 12.6L1.4 14L7 8.4L12.6 14L14 12.6L8.4 7L14 1.4Z"
+                                fill="#BCBBB4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="s-cart__body-row">
+                <div class="s-cart__body-col"><span class="name">Citrus Melange Body Cleanser</span></div>
+                <div class="s-cart__body-col">500 mL</div>
+                <div class="s-cart__body-col">
+                    <form action="#">
+                        <select name="amount">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </form>
+                    <span class="remove">Remove</span>
+                </div>
+                <div class="s-cart__body-col s-cart__body-col--price">37,00 €</div>
+            </div>
+            <div class="s-cart__body-btn-wrapper">
+                <p>Enjoy complimentary shipping on all orders within France.</p>
+                <div class="s-cart__body-btn-text">
+                    <p>Subtotal (Tax Incl.)</p>
+                    <span>37,00 €</span>
+                </div>
+                <button class="btn">Checkout</button>
+                <div class="s-cart__body-btn-credit">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.s-cart -->
+
+        <div class="s-cart-header">
+    <div class="container">
+        <div class="s-cart-header__row">
+            <div class="s-cart-header__cart">
+                <p>Cart</p>
+                <span>9</span>
+            </div>
+            <div class="s-cart-header__price">
+                <p><span>37,00</span> €</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="main-content">
+            <div class="s-checkout">
+  <div class="container">
+    <div class="s-checkout__row">
+      <div class="s-checkout__col-2">
+        <div class="logo s-checkout__logo">
+          <img src="./img/svg/logo.svg" alt="Logo">
+        </div>
+      </div>
+      
+      <div class="s-checkout__col-7">
+        <div class="s-checkout__title">
+          Where would you like your order sent?
+        </div>
+        
+        <form class="s-checkout-form" action="#">
+          <div class="s-checkout-form__row">
+            <div class="s-checkout-form__col-6">
+              <p class="s-checkout-form__input-wrapper">
+                <label class="s-checkout-form__input-label" for="s-checkout-form__input-1"> Имя </label>
+                <input class="s-checkout-form__input" type="text" name="email" id="s-checkout-form__input-1" required>
+              </p>
+            </div>
+            
+            <div class="s-checkout-form__col-6">
+              <p class="s-checkout-form__input-wrapper">
+                <label class="s-checkout-form__input-label" for="s-checkout-form__input-2"> Фамилия </label>
+                <input class="s-checkout-form__input" type="text" name="email" id="s-checkout-form__input-2" required>
+              </p>
+            </div>
+          </div>
+          
+          <div class="s-checkout-form__input-wrapper mb-65">
+            <label class="s-checkout-form__input-label" for="s-checkout-form__input-3"> Ваш город </label>
+            <select class="s-checkout-form__select" name="city" id="s-checkout-form__input-3">
+              <option value="" selected></option>
+              <option value="Киев">Киев</option>
+              <option value="Киев 1">Киев 1</option>
+              <option value="Киев 2">Киев 2</option>
+              <option value="Киев 3">Киев 3</option>
+            </select>
+          </div>
+          
+          <div class="s-checkout-form__row">
+            <div class="s-checkout-form__col-6">
+              <div class="s-checkout-form__input-wrapper">
+                <label class="s-checkout-form__input-label" for="s-checkout-form__input-4">Телефон</label>
+                <input class="s-checkout-form__input" type="text" name="telefon" id="s-checkout-form__input-4" required>
+              </div>
+            </div>
+            <div class="s-checkout-form__col-6">
+              <p class="s-checkout-form__input-wrapper">
+                <label class="s-checkout-form__input-label" for="s-checkout-form__input-5">E-mail</label>
+                <input class="s-checkout-form__input" type="email" name="email" id="s-checkout-form__input-5" required>
+              </p>
+            </div>
+          </div>
+          
+          <h4 class="s-checkout__small-title">
+            Пожалуйста, выберите предпочитаемый способ доставки </h4>
+          <div class="s-checkout-form__row mb-65">
+            <div class="s-checkout-form__col-6">
+              <label class="s-checkout-form__check-label">
+                <div class="check-label__title">Курьерская доставка</div>
+                <p>Estimated delivery</p>
+                <p>3 business days</p>
+                <p class="check-label__price">0,00 €</p>
+                <input type="radio" name="delivery" value="courier">
+              </label>
+            </div>
+            <div class="s-checkout-form__col-6">
+              <label class="s-checkout-form__check-label">
+                <div class="check-label__title">Новая почта</div>
+                <p>Estimated delivery</p>
+                <p>3 business days</p>
+                <p class="check-label__price">0,00 €</p>
+                <input type="radio" name="delivery" value="post">
+              </label>
+            </div>
+          </div>
+          
+          <div class="show-courier">
+            <div class="s-checkout-form__input-wrapper">
+              <label class="s-checkout-form__input-label" for="s-checkout-form__input-6">Улица</label>
+              <input class="s-checkout-form__input" type="text" name="address" id="s-checkout-form__input-6" required>
+            </div>
+            
+            <div class="s-checkout-form__row">
+              <div class="s-checkout-form__col-6">
+                <p class="s-checkout-form__input-wrapper">
+                  <label class="s-checkout-form__input-label" for="s-checkout-form__input-7">Дом</label>
+                  <input class="s-checkout-form__input" type="number" name="home" id="s-checkout-form__input-7" required>
+                </p>
+              </div>
+              <div class="s-checkout-form__col-6">
+                <p class="s-checkout-form__input-wrapper">
+                  <label class="s-checkout-form__input-label" for="s-checkout-form__input-8">Квартира</label>
+                  <input class="s-checkout-form__input" type="number" name="appartment" id="s-checkout-form__input-8" required>
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="show-post">
+            <div class="s-checkout-form__input-wrapper">
+              <label class="s-checkout-form__input-label" for="s-checkout-form__input-9">Отделение</label>
+              <input class="s-checkout-form__input" type="text" name="ofice" id="s-checkout-form__input-9" required>
+            </div>
+          </div>
+          
+          <div class="credit-checkbox mb-65">
+            <div class="credit-checkbox__title">
+              Метод оплаты
+            </div>
+            <span>
+              <input id="visa" type="radio" name="credit" value="visa" checked>
+              <label for="visa">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<path d="M20.6907 14.9113L21.9804 6.67642C22.1145 5.84077 21.5459 5.05448 20.7102 4.91999L3.30739 2.12677C2.47174 1.99266 1.68549 2.56127 1.55139 3.39692L0.932983 7.24808V14.8634L20.6907 14.9113Z" fill="#146AA8" />
+<path d="M20.7103 4.92007L15.7675 4.12695C12.4478 9.20649 7.08124 12.7247 2.9657 14.8685L20.6908 14.9114L21.9805 6.6765C22.1146 5.8408 21.546 5.05456 20.7103 4.92007Z" fill="#126099" />
+<path d="M1.53265 6.86523H19.1581C20.0045 6.86523 20.6907 7.55149 20.6907 8.39788V18.3601C20.6907 19.2065 20.0045 19.8927 19.1581 19.8927H1.53265C0.686253 19.8927 0 19.2065 0 18.3601V8.39788C0 7.55149 0.686253 6.86523 1.53265 6.86523Z" fill="#4398D1" />
+<path d="M19.158 6.86523H18.8515C15.2344 13.2866 8.47587 17.6914 4.34998 19.8927H19.158C20.0044 19.8927 20.6907 19.2064 20.6907 18.36V8.39788C20.6907 7.55149 20.0044 6.86523 19.158 6.86523Z" fill="#3E8CC7" />
+<path d="M5.74737 8.78101H1.91577V11.8463H5.74737V8.78101Z" fill="#FDB62F" />
+<path d="M3.06527 9.93066H1.91577V10.697H3.06527V9.93066Z" fill="#FD7B2F" />
+<path d="M5.7474 9.93066H4.5979V10.697H5.7474V9.93066Z" fill="#FD7B2F" />
+<path d="M16.859 17.9766C17.9171 17.9766 18.7748 17.1189 18.7748 16.0608C18.7748 15.0028 17.9171 14.145 16.859 14.145C15.801 14.145 14.9432 15.0028 14.9432 16.0608C14.9432 17.1189 15.801 17.9766 16.859 17.9766Z" fill="#FDB62F" />
+<path d="M14.5601 17.9766C15.6182 17.9766 16.4759 17.1189 16.4759 16.0608C16.4759 15.0028 15.6182 14.145 14.5601 14.145C13.502 14.145 12.6443 15.0028 12.6443 16.0608C12.6443 17.1189 13.502 17.9766 14.5601 17.9766Z" fill="#DE4C3C" />
+<path d="M3.83155 14.5286H1.53259V15.2949H3.83155V14.5286Z" fill="#87CED9" />
+<path d="M7.66321 14.5286H5.36426V15.2949H7.66321V14.5286Z" fill="#87CED9" />
+<path d="M11.4948 14.5286H9.1958V15.2949H11.4948V14.5286Z" fill="#87CED9" />
+<path d="M11.4948 16.8271H1.53259V17.5935H11.4948V16.8271Z" fill="#87CED9" />
+<path d="M14.1768 8.78101H13.4105V10.3137H14.1768V8.78101Z" fill="#87CED9" />
+<path d="M15.7095 8.78101H14.9432V10.3137H15.7095V8.78101Z" fill="#87CED9" />
+<path d="M17.2421 8.78101H16.4758V10.3137H17.2421V8.78101Z" fill="#87CED9" />
+<path d="M18.7748 8.78101H18.0085V10.3137H18.7748V8.78101Z" fill="#87CED9" />
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="22" height="22" fill="white" />
+</clipPath>
+</defs>
+</svg>
+                Visa/MasterCard
+              </label>
+            </span>
+            <span>
+              <input id="cash" type="radio" name="credit" value="cash">
+              <label for="cash">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.8799 8.70618V13.6509L22 12.4651L17.6765 1.60645L0 8.70618" fill="#6F9935" />
+<path d="M19.7789 13.3093V7.80713H2.23862L0.899048 8.34521V8.70617H18.8799V13.6509L19.7789 13.3093Z" fill="#658B30" />
+<path d="M0 8.70605H18.8799V20.3936H0V8.70605Z" fill="#79A73A" />
+<path d="M1.7981 12.6214C2.81525 12.3171 3.61101 11.5213 3.91534 10.5042H14.9646C15.2688 11.5214 16.0646 12.3171 17.0818 12.6214V16.4783C16.0646 16.7826 15.2688 17.5783 14.9646 18.5955H4.0457H3.91489C3.61068 17.5785 2.81508 16.7827 1.7981 16.4783V12.6214Z" fill="#AAC16B" />
+<path d="M9.43987 16.7975C10.6812 16.7975 11.6875 15.7912 11.6875 14.5499C11.6875 13.3085 10.6812 12.3022 9.43987 12.3022C8.19855 12.3022 7.19226 13.3085 7.19226 14.5499C7.19226 15.7912 8.19855 16.7975 9.43987 16.7975Z" fill="#79A73A" />
+<path d="M18.5683 8.70609L17.5025 5.96401L17.454 5.84309C16.3966 5.93687 15.363 5.49241 14.7038 4.6604L14.5833 4.70895L4.9447 8.70609H18.5683Z" fill="#AAC16B" />
+<path d="M7.11274 7.80713L4.9447 8.70617H18.5683L18.2191 7.80713H7.11274Z" fill="#89B140" />
+<path d="M4.49518 14.9994C4.74344 14.9994 4.9447 14.7981 4.9447 14.5499C4.9447 14.3016 4.74344 14.1003 4.49518 14.1003C4.24691 14.1003 4.04565 14.3016 4.04565 14.5499C4.04565 14.7981 4.24691 14.9994 4.49518 14.9994Z" fill="#79A73A" />
+<path d="M14.3847 14.9994C14.6329 14.9994 14.8342 14.7981 14.8342 14.5499C14.8342 14.3016 14.6329 14.1003 14.3847 14.1003C14.1364 14.1003 13.9352 14.3016 13.9352 14.5499C13.9352 14.7981 14.1364 14.9994 14.3847 14.9994Z" fill="#79A73A" />
+</svg>
+
+                Наличными
+              </label>
+            </span>
+            <span>
+              <input id="cod" type="radio" name="credit" value="cod">
+              <label for="cod">Наложенный платёж</label>
+            </span>
+          </div>
+          
+          <button class="s-checkout-form__btn">Continue to shipping details</button>
+        </form>
+      </div>
+      
+      <div class="s-checkout__col-3">
+        <div class="order-details">
+          <div class="order-details__title">
+            Состав заказа:
+          </div>
+          <ul class="order-details__list">
+            <li class="order-details__item">
+              <div class="order-details__product">
+                <p>Citrus Melange Body Cleanser</p>
+                <span>500 mL</span>
+              </div>
+              <div class="order-details__price">20,00 €</div>
+            </li>
+            <li class="order-details__item">
+              <div class="order-details__product">
+                <p>Citrus Melange Body Cleanser</p>
+                <span>500 mL</span>
+              </div>
+              <div class="order-details__price">20,00 €</div>
+            </li>
+          </ul>
+          <div class="order-details__summ">
+            <div class="summ__title">
+              Сумма к оплате
+            </div>
+            <div class="summ__price">
+              37,00 €
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- s-checkout-form__input -->
+
+        </div>
+
+    </div>
+
+    <script src="./js/vendors.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
