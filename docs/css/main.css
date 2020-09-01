@@ -1374,10 +1374,14 @@ body {
       flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
+.s-checkout__col-2,
 .s-checkout__col-3,
-.s-checkout__col-6 {
+.s-checkout__col-7 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   word-wrap: break-word;
@@ -1385,17 +1389,29 @@ body {
   margin-right: 15px;
 }
 
+.s-checkout__col-2 {
+  width: calc(16.66667% - 30px);
+}
+
 .s-checkout__col-3 {
   width: calc(25% - 30px);
 }
 
-.s-checkout__col-6 {
-  width: calc(50% - 30px);
+.s-checkout__col-7 {
+  width: calc(58.33333% - 30px);
 }
 
 .s-checkout__title {
   margin-bottom: 65px;
   font-size: 30px;
+}
+
+.s-checkout__small-title {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
 }
 
 .s-checkout-form__row {
@@ -1517,6 +1533,43 @@ body {
   margin-bottom: 65px;
 }
 
+.s-checkout-form__check-label {
+  position: relative;
+  display: block;
+  padding: 30px;
+  background: #EBEADE;
+  cursor: pointer;
+}
+
+.s-checkout-form__check-label input {
+  position: absolute;
+  top: 37px;
+  right: 30px;
+}
+
+.s-checkout-form__check-label p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666666;
+}
+
+.s-checkout-form__check-label--toggleBg {
+  background: #FFFEF2;
+}
+
+.check-label__title {
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 24px;
+  color: #333333;
+}
+
+.check-label__price {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+
 .shipping-detail {
   margin-bottom: 250px;
 }
@@ -1547,6 +1600,92 @@ body {
 .shipping-detail p {
   font-size: 24px;
   color: #666666;
+}
+
+.order-details {
+  padding: 40px;
+  color: #333;
+  background: #FFFEF2;
+}
+
+.order-details__title {
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-style: normal;
+}
+
+.order-details__list {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.order-details__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.order-details__product p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.order-details__product span {
+  font-weight: 400;
+  color: #666666;
+}
+
+.order-details__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.order-details__summ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 35px;
+}
+
+.summ__title {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.summ__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.credit-checkbox__title {
+  margin-bottom: 35px;
+  font-size: 30px;
+}
+
+.credit-checkbox span {
+  margin-right: 15px;
+}
+
+.credit-checkbox span:last-child input {
+  margin-right: 10px;
+}
+
+.credit-checkbox svg {
+  position: relative;
+  top: 3px;
+  margin-left: 10px;
+}
+
+.show-courier,
+.show-post {
+  display: none;
 }
 
 .s-cart {
@@ -2201,8 +2340,20 @@ body {
 /* END MAIN STYLES */
 
 @media screen and (max-width: 1200px) {
-  .s-checkout__col-6 {
-    width: calc(75% - 30px);
+  .s-checkout__col-2 {
+    width: calc(100% - 30px);
+  }
+
+  .s-checkout__col-2 {
+    margin-bottom: 65px;
+  }
+
+  .s-checkout__col-3 {
+    width: calc(41.66667% - 30px);
+  }
+
+  .s-checkout__col-7 {
+    width: calc(58.33333% - 30px);
   }
 
   .p-catalog__text {
@@ -2375,6 +2526,18 @@ body {
     margin: 0 auto;
   }
 
+  .s-checkout__col-3 {
+    width: calc(100% - 30px);
+  }
+
+  .s-checkout__col-3 {
+    margin-top: 65px;
+  }
+
+  .s-checkout__col-7 {
+    width: calc(100% - 30px);
+  }
+
   .s-checkout-form__col-3 {
     width: calc(100% - 30px);
   }
@@ -2532,24 +2695,18 @@ body {
     padding: 60px 0;
   }
 
-  .s-checkout__col-3 {
-    width: calc(100% - 30px);
-  }
-
-  .s-checkout__col-3 {
-    margin-bottom: 65px;
-  }
-
-  .s-checkout__col-6 {
-    width: calc(100% - 30px);
-  }
-
   .s-checkout-form__input {
     font-size: 16px;
   }
 
   .s-checkout-form__btn {
     width: 100%;
+  }
+
+  .credit-checkbox span {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .accordeon__content-title span {

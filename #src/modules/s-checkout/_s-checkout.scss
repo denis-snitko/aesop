@@ -1,203 +1,358 @@
 .s-checkout {
-    padding: 150px 0;
+  padding: 150px 0;
 
-    @include sm-block() {
-        padding: 60px 0;
+  @include sm-block() {
+    padding: 60px 0;
+  }
+
+  // .s-checkout__row
+
+  &__row {
+    @include row-flex();
+    justify-content: space-between;
+    @include md-block() {
     }
+  }
 
-    // .s-checkout__row
+  // .s-checkout__col-3
 
-    &__row {
-        @include row-flex();
+  &__col-2,
+  &__col-3,
+  &__col-7 {
+    @include col();
+  }
+
+  &__col-2 {
+    @include size(2);
+    @include size-xl(12);
+    @include xl-block() {
+      margin-bottom: 65px;
     }
+  }
 
-    // .s-checkout__col-3
-
-    &__col-3,
-    &__col-6 {
-        @include col();
+  &__col-3 {
+    @include size(3);
+    @include size-xl(5);
+    @include size-md(12);
+    @include md-block() {
+      margin-top: 65px;
     }
+  }
 
-    &__col-3 {
-        @include size(3);
-        @include size-sm(12);
-        @include sm-block() {
-            margin-bottom: 65px;
-        }
-    }
+  &__col-7 {
+    @include size(7);
+    @include size-xl(7);
+    @include size-md(12);
+  }
 
-    // .s-checkout__col-6
+  &__title {
+    margin-bottom: 65px;
+    font-size: 30px;
+  }
 
-    &__col-6 {
-        @include size(6);
-        @include size-xl(9);
-        @include size-sm(12);
-    }
+  &__small-title {
+    margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
 
-    &__title {
-        margin-bottom: 65px;
-        font-size: 30px;
-    }
+    color: #666666;
+  }
+
+
 }
 
 .s-checkout-form {
-    &__row {
-        @include row-flex();
+  &__row {
+    @include row-flex();
+  }
+
+  &__col-3,
+  &__col-4,
+  &__col-6,
+  &__col-8,
+  &__col-12 {
+    @include col();
+  }
+
+  &__col-3 {
+    @include size(3);
+    @include size-md(12);
+    @include md-block() {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__col-4 {
+    @include size(4.5);
+    @include size-md(12);
+  }
+
+  &__col-6 {
+    @include size(6);
+    @include size-md(12);
+  }
+
+  &__col-8 {
+    @include size(7.5);
+    @include size-md(12);
+    @include md-block() {
+      margin-top: 65px;
+    }
+  }
+
+  &__col-12 {
+    @include size(12);
+    @include md-block() {
+      margin-top: 65px;
+    }
+  }
+
+  &__input-wrapper {
+    position: relative;
+  }
+
+  &__input-label {
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+
+    font-size: 22px;
+
+    color: #666;
+    transition: 0.2s;
+  }
+
+  &__input {
+    position: relative;
+    z-index: 20;
+
+    width: 100%;
+    margin-bottom: 65px;
+    padding: 10px;
+
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #333333;
+
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+
+    @include sm-block() {
+      font-size: 16px;
+    }
+  }
+
+  &__btn {
+    padding: 19px 30px;
+
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    background-color: #999;
+    border: 1px solid #999;
+    transition: $base-transition;
+
+    @include sm-block() {
+      width: 100%;
     }
 
-    &__col-3,
-    &__col-4,
-    &__col-6,
-    &__col-8,
-    &__col-12 {
-        @include col();
+    &:hover {
+      color: #999;
+      background-color: transparent;
     }
+  }
 
-    &__col-3 {
-        @include size(3);
-        @include size-md(12);
-        @include md-block() {
-            margin-bottom: 65px;
-        }
-    }
+  &__select-label {
+    display: block;
+    margin-top: -22px;
+    padding-bottom: 24px;
+    color: #666666;
+  }
 
-    &__col-4 {
-        @include size(4.5);
-        @include size-md(12);
-    }
+  &__select {
+    width: 100%;
+    padding-top: 11px;
+    padding-left: 8px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    color: #333333;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+  }
 
-    &__col-6 {
-        @include size(6);
-        @include size-md(12);
-    }
+  &__label--top {
+    top: -20px !important;
+    font-size: 16px !important;
+  }
 
-    &__col-8 {
-        @include size(7.5);
-        @include size-md(12);
-        @include md-block() {
-            margin-top: 65px;
-        }
-    }
+  .mb-65 {
+    margin-bottom: 65px;
+  }
 
-    &__col-12 {
-        @include size(12);
-        @include md-block() {
-            margin-top: 65px;
-        }
-    }
+  &__check-label {
+    position: relative;
+    display: block;
+    padding: 30px;
+    background: #EBEADE;
 
-    &__input-wrapper {
-        position: relative;
-    }
+    cursor: pointer;
 
-    &__input-label {
-        position: absolute;
-        z-index: 10;
-        top: 10px;
-        left: 10px;
-
-        font-size: 22px;
-
-        color: #666;
-        transition: 0.2s;
-    }
-
-    &__input {
-        position: relative;
-        z-index: 20;
-
-        width: 100%;
-        margin-bottom: 65px;
-        padding: 10px;
-
-        font-size: 22px;
-        line-height: 28px;
-
-        color: #333333;
-
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #999;
-        outline: none;
-
-        @include sm-block() {
-            font-size: 16px;
-        }
-    }
-
-    &__btn {
-        padding: 19px 30px;
-
-        font-weight: 500;
-        font-size: 14px;
-        color: #fff;
-        background-color: #999;
-        border: 1px solid #999;
-        transition: $base-transition;
-
-        @include sm-block() {
-            width: 100%;
-        }
-
-        &:hover {
-            color: #999;
-            background-color: transparent;
-        }
-    }
-
-    &__select-label {
-        display: block;
-        margin-top: -22px;
-        padding-bottom: 24px;
-        color: #666666;
-    }
-
-    &__select {
-        width: 100%;
-        padding-top: 11px;
-        padding-left: 8px;
-        padding-bottom: 10px;
-        font-size: 22px;
-        color: #333333;
-        background: transparent;
-        border: none;
-        border-bottom: 1px solid #999;
-        outline: none;
-    }
-
-    &__label--top {
-        top: -20px !important;
-        font-size: 16px !important;
-    }
-
-    .mb-65 {
-        margin-bottom: 65px;
-    }
-}
-
-.shipping-detail {
-    margin-bottom: 250px;
-    
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 65px;
-       
-        h4 {
-            font-weight: 400;
-            font-size: 30px;
-        }
-
-        a {
-            font-size: 14px;
-            color: #666666;
-        }
+    input {
+      position: absolute;
+      top: 37px;
+      right: 30px;
     }
 
     p {
-        font-size: 24px;
+      margin-bottom: 10px;
+      font-size: 14px;
 
-        color: #666666;
+      color: #666666;
     }
+  }
+}
+
+.s-checkout-form__check-label--toggleBg {
+  background: #FFFEF2;
+}
+
+.check-label {
+  &__title {
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 24px;
+
+    color: #333333;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 14px;
+
+    color: #333333;
+  }
+}
+
+.shipping-detail {
+  margin-bottom: 250px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+
+    h4 {
+      font-weight: 400;
+      font-size: 30px;
+    }
+
+    a {
+      font-size: 14px;
+      color: #666666;
+    }
+  }
+
+  p {
+    font-size: 24px;
+
+    color: #666666;
+  }
+}
+
+.order-details {
+  padding: 40px;
+  color: #333;
+  background: #FFFEF2;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-style: normal;
+  }
+
+  &__list {
+    border-bottom: 1px solid rgba(#333333, .2);
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+
+  &__product {
+    p {
+      margin-bottom: 5px;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    span {
+      font-weight: 400;
+      color: #666666;
+    }
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__summ {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+}
+
+
+.summ__title {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.summ__price {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.credit-checkbox {
+  &__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+  }
+
+  span {
+    margin-right: 15px;
+    @include sm-block() {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+span:last-child {
+ input {
+   margin-right: 10px;
+ }
+}
+
+  svg {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+  }
+}
+
+.show-courier,
+.show-post {
+  display: none;
 }
