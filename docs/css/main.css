@@ -1466,7 +1466,7 @@ body {
   top: 10px;
   left: 10px;
   font-size: 22px;
-  color: #666;
+  color: #666666;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -1483,7 +1483,7 @@ body {
   color: #333333;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #999999;
   outline: none;
 }
 
@@ -1491,16 +1491,16 @@ body {
   padding: 19px 30px;
   font-weight: 500;
   font-size: 14px;
-  color: #fff;
-  background-color: #999;
-  border: 1px solid #999;
+  color: #ffffff;
+  background-color: #999999;
+  border: 1px solid #999999;
   -webkit-transition: 0.2s linear;
   -o-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .s-checkout-form__btn:hover {
-  color: #999;
+  color: #999999;
   background-color: transparent;
 }
 
@@ -1520,7 +1520,7 @@ body {
   color: #333333;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #999999;
   outline: none;
 }
 
@@ -1537,7 +1537,7 @@ body {
   position: relative;
   display: block;
   padding: 30px;
-  background: #EBEADE;
+  background: #ebeade;
   cursor: pointer;
 }
 
@@ -1554,7 +1554,7 @@ body {
 }
 
 .s-checkout-form__check-label--toggleBg {
-  background: #FFFEF2;
+  background: #fffef2;
 }
 
 .check-label__title {
@@ -1604,8 +1604,8 @@ body {
 
 .order-details {
   padding: 40px;
-  color: #333;
-  background: #FFFEF2;
+  color: #333333;
+  background: #fffef2;
 }
 
 .order-details__title {
